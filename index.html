@@ -17,24 +17,32 @@ main{
     color: white;
     width: 100%;
     height: 100vh;
-    background-image: url(public/images/web.jpeg);
+    background-image: url(public/images/bg-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .font{
-    font-size: 30px;
+    font-size: 36px;
     font-family: arial;
     margin-top: 200px;
     justify-content: center;
     text-align: center;
     padding: 7px;
-    
-
 }
+.shade {
+            background-color: rgba(0,0,0,0.5);
+            width: 105%;
+            height: 100vh;
+           
+
+        }
 nav{
     background-color: black;
     color: white;
 }
 .name{
-    font-size: 40px;
+    font-size: 47px;
     font-weight: bold;
     font-family: italic;
     padding-bottom: 8px;
@@ -90,12 +98,17 @@ nav{
    </nav>
 
 
-   <main>
-     <div class="font">
-       Hey i'm<br>
-      <span class="name">Prajwal Deshmukh</span><br>
-      I'm Full Stack Web Developer..
-</div>
+   <main background="public/images/bg-pc.jpg" >
+    <div class="shade">
+        <div>
+      <span class="bi bi-info-circle"></span>
+        </div>
+        <div class="font">
+            Hey i'm<br>
+            <span class="name">Prajwal Deshmukh</span><br>
+            I'm Full Stack Web Developer..
+            </div>
+     </div>
    </main>
 </body>
 </html>
