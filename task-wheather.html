@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<style>
+    header{
+        font-size: 15px;
+        font-family: arial;
+        font-weight: bold;
+        margin-bottom: 70px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .w-s{
+            display: flex;
+            font-size: 40px;
+        }
+        .no{
+            margin-left: 40px;
+
+        }
+        .r1{ 
+            padding-bottom: 30px;
+        }
+        article{
+            margin-top: 50px;
+            font-family: arial;
+        }
+        footer{
+            margin-top: 80px;
+            font-size: 25px;
+        }
+        .time{
+        display: flex;
+            
+        }
+        .down{
+            margin-bottom: 20px;
+            
+        }
+        .right{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .date{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: whitesmoke;
+
+        }
+        .shade {
+            background-color: rgba(0,0,0,0.2);
+            width: 100%;
+            height: 100vh;
+        }
+        .input{
+            display: flex;
+        }
+</style>
+<body background="public/images/wheather.jpg">
+   <div class="shade">
+    <header>
+        <div>Bidar,KA <br>Updated a min ago</div>
+    </header>
+    <section>
+        <div class="w-s">
+            <div class="bi bi-sun"></div>
+            <div class="no">30</div>
+            <div>&nbsp;&degc <br><span>&nbsp;&degf</span></div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30 <br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23</span>
+            </div> </div>
+            <div class="right">
+                <div class="r1">Wind:14KMPH</div>
+                <div>Humidity:70%</div>
+            </div>
+         </section>
+         <article widht="100%">
+            <div class="date">
+                Sunny Tue 12, 3:35 pm
+            </div>
+            <div class="time">
+                <div>
+                    4pm7pm10pm12am1am7am
+                </div>
+            </div>
+         <input type="range" min="0" max="100" width="100%">
+</article>
+<footer>
+    <table width="100%">
+        <tr class="days">
+            <td>Tue12</td>
+            <td>Wed13</td>
+            <td>Thu14</td>
+            <td>Fri15</td>
+            <td>Sat16</td>
+            <td>Sun17</td>
+            <td>Mon18</td>
+            <td>Tue19</td>
+        </tr>
+        <tr class="down">
+            <td class="bi bi-sun-fill"></td>
+            <td class="bi bi-clouds-fill"></td>
+            <td class="bi bi-clouds-fill"></td>
+            <td class="bi bi-clouds-fill"></td>
+            <td class="bi bi-clouds-fill"></td>
+            <td class="bi bi-clouds-fill"></td>
+            <td class="bi bi-clouds-fill"></td>
+            <td class="bi bi-cloud-rain-heavy"></td>
+
+        </tr>
+        <tr class="down">
+            <td>30&deg</td>
+            <td>30&deg</td>
+            <td>35&deg</td>
+            <td>27deg</td>
+            <td>22&deg</td>
+            <td>30&deg</td>
+            <td>30&deg</td>
+            <td>35&deg</td>
+        </tr>
+        <tr class="down">
+                 <td>30&deg</td>
+                 <td>35&deg</td>
+                 <td>27deg</td>
+                 <td>35&deg</td>
+                 <td>30&deg</td>
+                 <td>25&deg</td>
+                 <td>30&deg</td>
+                 <td>27deg</td>
+
+
+        
+        </tr>
+    </table>
+</footer>
+   </div>
+</body>
+</html>
