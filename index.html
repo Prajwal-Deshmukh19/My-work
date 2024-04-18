@@ -156,10 +156,11 @@ nav{
             font-family: algerian;
             margin-bottom: 60px;
             padding: 15px;
+            color: rgb(208, 208, 29);
         }
         .workbackground{
             font-size: 25px;
-            background-color: lightskyblue;
+            background-color: rgb(19, 76, 112);
             color: black;
             height: 100vh;
         }
@@ -168,7 +169,7 @@ nav{
             color: black;
         }
         .btnn1{
-            background-color: lightcoral;
+            background-color: rgb(200, 167, 225);
             color: white;
             width: 90px;
             height: 40px;
@@ -177,7 +178,7 @@ nav{
 
         }
         .btnn2{
-            background-color: lightgreen;
+            background-color: rgb(158, 213, 234);
             color: white;
             width: 90px;
             height: 40px;
@@ -186,7 +187,7 @@ nav{
 
         }
         .btnn3{
-            background-color: lightskyblue;
+            background-color: rgb(95, 161, 255);
             color: white;
             width: 90px;
             height: 40px;
@@ -195,7 +196,7 @@ nav{
 
         }
         .btnn4{
-            background-color: red;
+            background-color: rgb(241, 16, 16);
             color: white;
             width: 90px;
             height: 40px;
@@ -241,6 +242,50 @@ nav{
 #SN{
     font-style: italic;
     color: lightpink;
+
+}
+.bi-star-fill{
+    color: goldenrod;
+}
+.bi-star{
+    color: goldenrod;
+}
+#tech{
+    color: darkred;
+    font-size: 28px;
+}
+#lang{
+    color: yellow;
+}
+#langh{
+    color: whitesmoke;
+}
+#icnp{
+    color: yellow;
+}
+#crd1{
+    background-color:gray ;
+    width: 300px;
+    height: 400px;
+}
+#crd2{
+    background-color: black;
+    width: 300px;
+    height: 400px;
+}
+#crd3{
+    background-color: lightblue;
+    width: 300px;
+    height: 400px;
+}
+#crd4{
+    background-color: black;
+    width: 300px;
+    height: 400px;
+}
+#workk{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
 }
 </style>
 </head>
@@ -292,9 +337,9 @@ nav{
     </div>
     </div>
     
-    <div class="part-2" id="resume">
+    <div class="part-2 p-2" id="resume">
         <div class="navs">
-        <h2 class="ms-5">TECHNICAL EXPERTISE</h2>
+        <h2 class=" fst-italic ms-2" id="tech"><p id="tech">TECHNICAL-EXPERTISE</p></h2>
         <div class="tech">
             <h4 class="mb-3">JAVASCRIPT</h4>
             <span class="bi bi-caret-right-fill">DataTypes and Structure</span><br>
@@ -326,10 +371,10 @@ nav{
             <span class="bi bi-caret-right-fill">Webpack</span><br>
             <span class="bi bi-caret-right-fill">Testing with JEST</span><br>
        </div>
-       <h2 class="mt-5 mb-3">FLUENT LANGUAGES</h2>
+       <h2 class="mt-5 mb-3" id="tech"> FLUENT LANGUAGES</h2>
        <div class="languages"><span>English,Hindi and Kannada </span></div>
        <br>
-       <h2 class="mb-3">RATING</h2>
+       <h2 class="mb-3" id="tech"> RATING</h2>
        <div class="rating">
         
         <span>JS & TS:&nbsp; <span class="bi bi-star-fill"></span> <span class="bi bi-star-fill"></span> <span class="bi bi-star-fill"></span> <span class="bi bi-star-fill"></span> <span class="bi bi-star"></span> </span><br>
@@ -340,22 +385,22 @@ nav{
     </div>
         <div class="ms-4">
             <div class="aboutme">
-                <h2>ABOUT ME</h2><br>
+               <h2 class="bi bi-person"> ABOUT ME</h2><br>
                 <p>I am Prajwal Deshmukh an aspiring Web UI Full Stack Learning fresher who is trying to seek a role to enhance and explore my technical knowledge in your company.</p>
-                <h2>CAREER OBJECTIVE</h2>
+                <h2 class="bi bi-award"> CAREER OBJECTIVE</h2>
                 <p>I want to be a part of renewed organization and to contribute towards the growth of the organization based on my personal capabilities by learning from the new exposure within the structured frame of work.</p>
-                <h2>WORK EXPERIENCE (Personal Project)</h2>
+                <h2 class="bi bi-briefcase"> WORK EXPERIENCE (Personal Project)</h2>
                 <h4>1.ONLINE SHOPPING APPLICATION (OSA)</h4>
                 <p class="bi bi-arrow-right-short">Understanding how to design a Shopping online application that allows customers to browser,filter,sort products and create a custom shopping cart. </p>
                 <h4>2.ONLINE VIDEO TUTORIAL LIBRARY (OVL)</h4>
                 <p class="bi bi-arrow-right-short">Understanding how to design a Video library like YouTube application that allows admin to uplaod,modify and delete videos.Customer can watch videos after register and login.</p>
                 <h4 class="fw-bold">Technologies Used:</h4>
-                <span><span class="fw-semibold">Front End:</span> HTML,CSS,javascript,jQuery</span><br>
-                <span><span class="fw-semibold">Back End:</span> Node JS,Express JS and MongoDB</span>
+                <span id="lang"><span class="fw-semibold" id="langh">Front End:</span> HTML, CSS, Javascript, JQuery</span><br>
+                <span id="lang"><span class="fw-semibold" id="langh">Back End:</span> Node JS, Express JS and MongoDB</span> <br><br>
                 
                 
     
-                <h2>EDUCATION</h2>
+                <h2 class="bi bi-journal-check"> EDUCATION</h2>
                 <h4>JUNIOR SECONDARY (10TH)</h4>
                 <P>School Name: GURU NANAK PUBLIC SCHOOL </P>
                 <p>Passing Year: 2016 </p>
@@ -384,14 +429,57 @@ nav{
     </div> 
     <div class="workbackground">
         <div class="my" id="mywork">MY WORKS</div>
-        <div class="button">
+        <!-- <div class="button">
             <button class="btnn1"><a class="acolor" href="./shopper.html">Shopper</a></button>
             <button class="btnn2"><a class="acolor" href="./dental1.html">Dental</a></button>
             <button class="btnn3"><a class="acolor" href="./landkit.html">landkit</a></button>
             <button class="btnn4"><a class="acolor" href="./netflix.html">Netflix</a></button>
             <button class="btnn5"><a class="acolor" href="./nareshit-youtube.html">Youtube</a></button>
            <button class="btnn6"><a class="acolor" href="./amazon-login.html">Amazon</a></button>
-            <button class="btnn7"><a class="acolor" href="./task-wheather.html">Weather</a></button>
+            <button class="btnn7"><a class="acolor" href="./task-wheather.html">Weather</a></button> -->
+            <div id="workk">
+            <div class="card border border-1 shadow" id="crd1">
+                <div class="card-header">
+                    <img src="./public/images/shopper-card.png" width="300" height="400">
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btnn1"><a class="acolor" href="./shopper.html">Shopper</a></button>
+                </div>
+
+            </div>
+
+           
+                <div class="card border border-1 shadow" id="crd2">
+                <div class="card-header">
+                    <img src="./public/images/dental.png" width="300" height="400">
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btnn2"><a class="acolor" href="./dental1.html">Dental</a></button>
+                </div>
+
+            </div>
+
+            <div class="card border border-1 shadow" id="crd3">
+                <div class="card-header">
+                    <img src="./public/images/weather.png" width="300" height="400">
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btnn7"><a class="acolor" href="./task-wheather.html">Weather</a></button>
+                </div>
+
+            </div>
+
+            <div class="card border border-1 shadow" id="crd4">
+                <div class="card-header">
+                    <img src="./public/images/NETFLIX-CARD.png" width="300" height="400">
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btnn4"><a class="acolor" href="./netflix.html">Netflix</a></button>
+                </div>
+
+            </div>
+
+            </div>
         </div>
        </div>
            
