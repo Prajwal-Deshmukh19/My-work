@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Typing Name</title>
+  <style>
+    /* Optional: Style for the cursor blinking effect */
+    #dynamicName::after {
+      content: '|'; /* Cursor */
+      animation: blink 0.7s infinite; /* Blinking effect */
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Element to display the dynamically typed name -->
+<h1 id="dynamicName"></h1>
+
+<script>
+  // JavaScript code for typing effect
+  var name = "Your Name"; // Replace with your name
+  var index = 0;
+  var typingSpeed = 100; // Adjust typing speed (in milliseconds)
+
+  function typeNextLetter() {
+    if (index < name.length) {
+      document.getElementById("dynamicName").innerText += name.charAt(index);
+      index++;
+      setTimeout(typeNextLetter, typingSpeed);
+    }
+  }
+
+  // Start typing when the page loads
+  window.onload = function() {
+    typeNextLetter();
+  };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-Portfolio</title>
+    <!-- Your existing stylesheet and scripts -->
+    <style>
+        /* Your existing CSS styles */
+        /* Add any additional styles needed for the animation here */
+    </style>
+    <script>
+        var names = ["Prajwal Deshmukh", "John Doe", "Jane Smith"]; // Array of names
+        var index = 0; // Index to keep track of current name
+        var typingSpeed = 10; // Typing speed (in milliseconds)
+
+        function typeNextName() {
+            var currentName = names[index];
+            var currentNameLength = currentName.length;
+            var dynamicElement = document.getElementById("NextName");
+            dynamicElement.innerHTML = ''; // Clear the content before typing a new name
+
+            // Loop through each character of the name and display with a typing effect
+            for (var i = 0; i < currentNameLength; i++) {
+                setTimeout(function() {
+                    dynamicElement.innerHTML += currentName.charAt(i);
+                }, typingSpeed * i);
+            }
+
+            // Increment the index for the next name
+            index = (index + 1) % names.length;
+
+            // Reset index and start typing the next name after a delay
+            setTimeout(typeNextName, typingSpeed * currentNameLength * 1.5); // Adjust delay as needed
+        }
+
+        // Start typing when the page loads
+        window.onload = function() {
+            typeNextName();
+        };
+    </script>
+</head>
+<body>
+   <div class="shade">
+        <div>
+            <span class="bi bi-info-circle"></span>
+        </div>
+        <div class="font">
+            Hey, I'm <br>
+            <span class="headername" id="NextName">Hii</span><br>
+            I'm a Full Stack Web Developer..
+        </div>
+    </div>
+    <!-- Your remaining HTML content -->
+</body>
+</html>

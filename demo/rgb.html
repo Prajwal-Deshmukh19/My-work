@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .headername {
+    animation: blink 1s infinite alternate; /* Apply blink animation */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+    </style>
+    <script>
+        var name = "Prajwal Deshmukh";
+        var index = 0;
+        var time = 100;
+    
+        function changeColor() {
+            var red = Math.floor(Math.random() * 256);
+            var green = Math.floor(Math.random() * 256);
+            var blue = Math.floor(Math.random() * 256);
+            var color = "rgb(" + red + "," + green + "," + blue + ")";
+            document.getElementById("NextName").style.color = color;
+        }
+    
+        function NameLoad() {
+            if (index < name.length) {
+                document.getElementById("NextName").innerHTML += name.charAt(index);
+                index++;
+                changeColor(); // Change color on each character addition
+            } else {
+                document.getElementById("NextName").innerHTML = ""; // Clear the name once it's fully displayed
+                index = 0; // Reset the index to 0
+            }
+            setTimeout(NameLoad, time);
+        }
+    
+        NameLoad(); // Start the function initially
+    </script>
+    
+</head>
+<body>
+    <span class="headername" id="NextName">Prajwal Deshmukh</span><br>
+
+</body>
+</html>
