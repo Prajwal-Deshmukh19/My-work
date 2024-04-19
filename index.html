@@ -53,7 +53,7 @@
             font-weight: bold;
             font-style: italic;
             padding-bottom: 8px;
-            color: lightsalmon;
+            color: rgb(50, 221, 136);
         }
 
         .image {
@@ -184,7 +184,7 @@
             font-family: algerian;
             margin-bottom: 60px;
             padding: 15px;
-            color: rgb(208, 208, 29);
+            color: rgb(239, 239, 97);
         }
 
         .workbackground {
@@ -341,8 +341,11 @@
         }
 
         #cnt {
-            font-size: 35px;
-            color: white;
+            font-size: 30px;
+            color: rgb(238, 128, 128);
+            font-family:Vladimir script regular;
+            text-align: end;
+            margin-top: 60px;
         }
 
         #cntapp {
@@ -352,6 +355,7 @@
             justify-content: space-evenly;
             margin-left: 40px;
             color: white;
+            
         }
 
         #cntapp1 {
@@ -454,11 +458,47 @@
         #sbm{
             color: yellow;
         }
+        #paral1{
+            text-align: justify;
+            font-style: italic;
+        }
+        #paral2{
+            font-style: italic;
+        }
+        #prii{
+            animation-name: blink;
+            animation-duration: 800ms;
+            animation-iteration-count: infinite;
+            color: lightgreen;
+        }
+        @keyframes blink{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        #fnav{
+            color: rgb(247, 247, 53);
+            font-weight: bold;
+            font-size: 24px;
+            
+        }
+        #webdev{
+            font-size: 55px;
+            color: rgb(247, 247, 48)
+            ;
+        }
     </style>
     <script>
         var name = "Prajwal Deshmukh";
         var index = 0;
         var time = 300;
+
+        var namee="...";
+        var indeex=0;
+        var timee=300;
         function NameLoad() {
             if (index < name.length) {
                 document.getElementById("NextName").innerHTML += name.charAt(index);
@@ -468,8 +508,35 @@
                 index = 0; // Reset the index to 0
             }
             setTimeout(NameLoad, time);
+
+            function DotLoad(){
+            if (indeex < namee.length){
+                document.getElementById("DotNext").innerHTML+= namee.charAt(indeex);
+                indeex++;
+            }else{
+                document.getElementById("DotNext").innerHTML ="";
+                indeex=0;
+            }
+            setTimeout(DotLoad,timee)
         }
 
+
+
+        }
+
+        // var namee="..";
+        // var indeex=0;
+        // var timee=300;
+        // function DotLoad(){
+        //     if (indeex < namee.length){
+        //         document.getElementById("DotNext").innerHTML+= namee.charAt(indeex);
+        //         indeex++;
+        //     }else{
+        //         document.getElementById("DotNext").innerHTML ="";
+        //         indeex=0;
+        //     }
+        //     setTimeout(DotLoad,timee)
+        // }
 
 
 
@@ -510,7 +577,7 @@
                     <span class="typewriter">
                         <h1 class="headername" id="NextName"></h1>
                     </span><br>
-                    <h1> I'm Full Stack Web Developer..</h1>
+                    <div> I'm Full Stack <span id="webdev">Web Developer..</span></div>
                 </div>
             </div>
         </main>
@@ -711,12 +778,12 @@
        </footer>  -->
     <footer>
         <div class="bg-shade">
-            <p class="text-center fst-italic" id="cnt">Prajwal Deshmukh</p>
-            <div id="cntapp">
+            <!-- <p class="" id="cnt">Prajwal Deshmukh</p> -->
+            <div id="cntapp" class="p-4" >
 
-                <a href="#home"><span>Home</span></a>
-                <span data-bs-toggle="modal" data-bs-target="#mod">About</span>
-                <span>Contact</span>
+                <a href="#home"><span id="fnav">Home</span></a>
+                <span data-bs-toggle="modal" data-bs-target="#mod" class="mt-2" id="fnav">About</span>
+                <a href="mailto:prajwalrd19@gmail.com"><span id="fnav">Contact</span></a>
             </div>
             <div id="cntapp1">
                 <a href="https://www.linkedin.com/in/prajwal-deshmukh-2a9552304/" target="_blank"><span
@@ -730,29 +797,30 @@
             <div class="text-center fw-bold" id="cpy">
                 <p>Copyright Prajwal Deshmukh - All rights reserved</p>
             </div>
-
+            <p class="" id="cnt">Created By: Prajwal Deshmukh..</p>
         </div>
     </footer>
     <div class="modal modal-fade" id="mod">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-light">
-                    <p class="h2 text-center" id="abtmec">About ME</p>
+                    <p class="h2 text-center" id="abtmec"><span class="bi bi-person-raised-hand" id="prii"></span>About ME</p>
+                    <button class="btn btn-close bg-danger" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body" id="abtbody">
-                    <p class="fw-bold">As a recent graduate with a passion for UI development, I am excited to embark on
+                    <p class="fw-bold bi bi-arrow-right-short" id="paral1">As a recent graduate with a passion for UI development, I am excited to embark on
                         a journey of turning designs into dynamic and user-friendly interfaces. With a solid foundation
                         in front-end technologies and a hunger for continuous learning, I am eager to bring fresh
                         perspectives and creative solutions to the table.</p>
                     <h3 id="sbm">Skills & Expertice</h3>
-                    <p class="bi bi-arrow-right"> Proficient in HTML, CSS, and JavaScript, I have hands-on experience building static web pages and
+                    <p class="bi bi-arrow-right" id="paral2"> Proficient in HTML, CSS, and JavaScript, I have hands-on experience building static web pages and
                         simple interactive components.</p>
-                    <p class="bi bi-arrow-right"> Familiar with front-end frameworks like React, I am enthusiastic about expanding my knowledge and honing my skills in modern web development.</p>
-                    <p class="bi bi-arrow-right"> Eager to dive into UI/UX design principles, I am keen on understanding user behavior and creating intuitive interfaces that prioritize usability and accessibility.</p>
-                    <p class="bi bi-arrow-right"> Adept at problem-solving and debugging, I approach challenges with a positive attitude and a willingness to experiment and learn from mistakes.</p>
-                    <p class="bi bi-arrow-right"> Collaborative and team-oriented, I thrive in environments where I can contribute my ideas and learn from experienced professionals</p>
+                    <p class="bi bi-arrow-right"  id="paral2"> Familiar with front-end frameworks like React, I am enthusiastic about expanding my knowledge and honing my skills in modern web development.</p>
+                    <p class="bi bi-arrow-right"  id="paral2"> Eager to dive into UI/UX design principles, I am keen on understanding user behavior and creating intuitive interfaces that prioritize usability and accessibility.</p>
+                    <p class="bi bi-arrow-right"  id="paral2"> Adept at problem-solving and debugging, I approach challenges with a positive attitude and a willingness to experiment and learn from mistakes.</p>
+                    <p class="bi bi-arrow-right"  id="paral2"> Collaborative and team-oriented, I thrive in environments where I can contribute my ideas and learn from experienced professionals</p>
                     <h3 id="sbm">Projects:</h3>
-                    <p class="bi bi-dot"> During my studies, I have worked on several projects that have allowed me to apply my skills in UI development. From creating responsive layouts to implementing basic interactivity, I have gained valuable hands-on experience and a deeper appreciation for the intricacies of front-end development.</p>
+                    <p class="bi bi-dot"  id="paral2"> During my studies, I have worked on several projects that have allowed me to apply my skills in UI development. From creating responsive layouts to implementing basic interactivity, I have gained valuable hands-on experience and a deeper appreciation for the intricacies of front-end development.</p>
                 </div>
             </div>
         </div>
