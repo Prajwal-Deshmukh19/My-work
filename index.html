@@ -191,7 +191,7 @@
             font-size: 25px;
             /* background-color: rgb(19, 76, 112);
              */
-             background: linear-gradient(rgb(27, 27, 194), rgb(28, 176, 225), rgb(96, 96, 141));
+            background: linear-gradient(rgb(27, 27, 194), rgb(28, 176, 225), rgb(96, 96, 141));
             color: black;
             height: 100vh;
         }
@@ -219,6 +219,19 @@
             font-size: 20px;
             border-radius: 10px;
 
+        }
+
+        #mob-view {
+            display: none;
+        }
+
+        .lap-view {
+            display: flex;
+    flex-direction: column;
+        }
+
+        .lap-view span{
+           margin: 10px;
         }
 
         .btnn3 {
@@ -343,7 +356,7 @@
         #cnt {
             font-size: 30px;
             color: rgb(238, 128, 128);
-            font-family:Vladimir script regular;
+            font-family: Vladimir script regular;
             text-align: end;
             margin-top: 60px;
         }
@@ -355,7 +368,7 @@
             justify-content: space-evenly;
             margin-left: 40px;
             color: white;
-            
+
         }
 
         #cntapp1 {
@@ -455,89 +468,124 @@
             margin-left: 130px;
             color: lightgoldenrodyellow;
         }
-        #sbm{
+
+        #sbm {
             color: yellow;
         }
-        #paral1{
+
+        #paral1 {
             text-align: justify;
             font-style: italic;
         }
-        #paral2{
+
+        #paral2 {
             font-style: italic;
         }
-        #prii{
+
+        #prii {
             animation-name: blink;
             animation-duration: 800ms;
             animation-iteration-count: infinite;
             color: lightgreen;
         }
-        @keyframes blink{
-            from{
+
+        @keyframes blink {
+            from {
                 opacity: 0;
             }
-            to{
+
+            to {
                 opacity: 1;
             }
         }
-        #fnav{
+
+        #fnav {
             color: rgb(247, 247, 53);
             font-weight: bold;
             font-size: 24px;
-            
+
         }
-        #webdev{
+
+        #webdev {
             font-size: 55px;
-            color: rgb(247, 247, 48)
-            ;
+            color: rgb(247, 247, 48);
         }
 
         @media only screen and (max-width: 768px) {
             .idd {
-                grid-template-columns: 1fr; /* Change grid layout to a single column */
+                grid-template-columns: 1fr;
+                /* Change grid layout to a single column */
             }
 
             .main {
-                padding: 0; /* Adjust padding as needed */
-                background-size:cover ;
+                padding: 0;
+                /* Adjust padding as needed */
+                background-size: cover;
             }
 
             /* Adjust specific elements for smaller screens */
             .two {
-                height: auto; /* Auto height to fit content */
+                height: auto;
+                /* Auto height to fit content */
             }
 
             .part-1,
             .part-2 {
-                display: none; /* Change display to block for full-width sections */
+                display: none;
+                /* Change display to block for full-width sections */
             }
 
             /* Add more specific adjustments as needed */
 
-            #workk{
+            #workk {
                 overflow: auto;
             }
-            
-            .two{
-                display: grid;
-                grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+
+            .lap-view {
                 padding: 10px;
+                display: none;
             }
-            .icons{
+
+            #mob-view{
+                display: block;
+            }
+            #mob-view span{
+               margin-left: 36px;
+            }
+
+            .icons {
                 display: grid;
                 grid-template-columns: 4fr 4fr 4fr;
                 padding: 10px;
                 margin: 20px;
             }
-            .one{
-        display: flex;
-        justify-content: center;
-    }
-#NextName{
-    font-size: 33px;
-}
-#sidelinkedin{
-    margin-left: 25px;
-}
+
+            .one {
+                display: flex;
+                justify-content: center;
+            }
+
+            #NextName {
+                font-size: 33px;
+            }
+
+            #sidelinkedin {
+                margin-left: 25px;
+            }
+
+            #bgmp {
+                background-size: auto;
+            }
+
+            #cnt {
+                margin: 6px;
+            }
+
+            #cntapp {
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+                margin: 10px;
+            }
 
         }
     </style>
@@ -546,9 +594,9 @@
         var index = 0;
         var time = 300;
 
-        var namee="...";
-        var indeex=0;
-        var timee=300;
+        var namee = "...";
+        var indeex = 0;
+        var timee = 300;
         function NameLoad() {
             if (index < name.length) {
                 document.getElementById("NextName").innerHTML += name.charAt(index);
@@ -559,18 +607,18 @@
             }
             setTimeout(NameLoad, time);
 
-            function DotLoad(){
-            if (indeex < namee.length){
-                document.getElementById("DotNext").innerHTML+= namee.charAt(indeex);
-                indeex++;
-            }else{
-                document.getElementById("DotNext").innerHTML ="";
-                indeex=0;
+            function DotLoad() {
+                if (indeex < namee.length) {
+                    document.getElementById("DotNext").innerHTML += namee.charAt(indeex);
+                    indeex++;
+                } else {
+                    document.getElementById("DotNext").innerHTML = "";
+                    indeex = 0;
+                }
+                setTimeout(DotLoad, timee)
             }
-            setTimeout(DotLoad,timee)
-        }
 
-    
+
 
         }
 
@@ -598,18 +646,29 @@
     <div class="idd" id="home">
         <nav>
             <div class="one">
-                <img class="image" src="public/images/eagle.jpg" width="100px" height="100px">
+                <img class="image" src="public/images/eagle.jpg" id="bgmp" width="100px" height="100px">
             </div>
             <div class="two">
-                <span class="bi bi-house-door"> Home</span>
-                <span class="bi bi-person">About</span>
-                <span class="bi bi-file-earmark-person"><a href="#resume"> Resume</a></span>
-                <span class="bi bi-person-workspace"><a href="#mywork"> MyWorks</a></span>
-                <a href="mailto:prajwalrd19@gmail.com"><span class="bi bi-envelope"> Contact Me</span></a>
+                <div class="lap-view">
+                    <span class="bi bi-house-door"> Home</span>
+                    <span class="bi bi-person">About</span>
+                    <span class="bi bi-file-earmark-person"><a href="#resume"> Resume</a></span>
+                    <span class="bi bi-person-workspace"><a href="#mywork"> MyWorks</a></span>
+                    <a href="mailto:prajwalrd19@gmail.com"><span class="bi bi-envelope"> Contact Me</span></a>
+
+                </div>
+                <div id="mob-view">
+                    <span class="bi bi-house-door"></span>
+                    <span class="bi bi-person"></span>
+                    <span class="bi bi-file-earmark-person"><a href="file:///C:/Users/prajw/OneDrive/Desktop/My-Work/Prajwald.UI.pdf" target="_blank"></a></span>
+                    <span class="bi bi-person-workspace"><a href="#mywork"></a></span>
+                    <a href="mailto:prajwalrd19@gmail.com"><span class="bi bi-envelope"></span></a>
+
+                </div>
             </div>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/prajwal-deshmukh-2a9552304/"><span
-                        class="bi bi-linkedin" id="sidelinkedin"></span></a>
+                <a href="https://www.linkedin.com/in/prajwal-deshmukh-2a9552304/"><span class="bi bi-linkedin"
+                        id="sidelinkedin"></span></a>
                 <a href=" https://www.instagram.com/prajwalrd19/?hl=en"> <span class="bi bi-instagram ms-5"></span></a>
                 <span class="bi bi-twitter-x ms-5 "></span>
 
@@ -829,7 +888,7 @@
     <footer>
         <div class="bg-shade">
             <!-- <p class="" id="cnt">Prajwal Deshmukh</p> -->
-            <div id="cntapp" class="p-4" >
+            <div id="cntapp" class="p-4">
 
                 <a href="#home"><span id="fnav">Home</span></a>
                 <span data-bs-toggle="modal" data-bs-target="#mod" class="mt-2" id="fnav">About</span>
@@ -854,23 +913,34 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-light">
-                    <p class="h2 text-center" id="abtmec"><span class="bi bi-person-raised-hand" id="prii"></span>About ME</p>
+                    <p class="h2 text-center" id="abtmec"><span class="bi bi-person-raised-hand" id="prii"></span>About
+                        ME</p>
                     <button class="btn btn-close bg-danger" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body" id="abtbody">
-                    <p class="fw-bold bi bi-arrow-right-short" id="paral1">As a recent graduate with a passion for UI development, I am excited to embark on
+                    <p class="fw-bold bi bi-arrow-right-short" id="paral1">As a recent graduate with a passion for UI
+                        development, I am excited to embark on
                         a journey of turning designs into dynamic and user-friendly interfaces. With a solid foundation
                         in front-end technologies and a hunger for continuous learning, I am eager to bring fresh
                         perspectives and creative solutions to the table.</p>
                     <h3 id="sbm">Skills & Expertice</h3>
-                    <p class="bi bi-arrow-right" id="paral2"> Proficient in HTML, CSS, and JavaScript, I have hands-on experience building static web pages and
+                    <p class="bi bi-arrow-right" id="paral2"> Proficient in HTML, CSS, and JavaScript, I have hands-on
+                        experience building static web pages and
                         simple interactive components.</p>
-                    <p class="bi bi-arrow-right"  id="paral2"> Familiar with front-end frameworks like React, I am enthusiastic about expanding my knowledge and honing my skills in modern web development.</p>
-                    <p class="bi bi-arrow-right"  id="paral2"> Eager to dive into UI/UX design principles, I am keen on understanding user behavior and creating intuitive interfaces that prioritize usability and accessibility.</p>
-                    <p class="bi bi-arrow-right"  id="paral2"> Adept at problem-solving and debugging, I approach challenges with a positive attitude and a willingness to experiment and learn from mistakes.</p>
-                    <p class="bi bi-arrow-right"  id="paral2"> Collaborative and team-oriented, I thrive in environments where I can contribute my ideas and learn from experienced professionals</p>
+                    <p class="bi bi-arrow-right" id="paral2"> Familiar with front-end frameworks like React, I am
+                        enthusiastic about expanding my knowledge and honing my skills in modern web development.</p>
+                    <p class="bi bi-arrow-right" id="paral2"> Eager to dive into UI/UX design principles, I am keen on
+                        understanding user behavior and creating intuitive interfaces that prioritize usability and
+                        accessibility.</p>
+                    <p class="bi bi-arrow-right" id="paral2"> Adept at problem-solving and debugging, I approach
+                        challenges with a positive attitude and a willingness to experiment and learn from mistakes.</p>
+                    <p class="bi bi-arrow-right" id="paral2"> Collaborative and team-oriented, I thrive in environments
+                        where I can contribute my ideas and learn from experienced professionals</p>
                     <h3 id="sbm">Projects:</h3>
-                    <p class="bi bi-dot"  id="paral2"> During my studies, I have worked on several projects that have allowed me to apply my skills in UI development. From creating responsive layouts to implementing basic interactivity, I have gained valuable hands-on experience and a deeper appreciation for the intricacies of front-end development.</p>
+                    <p class="bi bi-dot" id="paral2"> During my studies, I have worked on several projects that have
+                        allowed me to apply my skills in UI development. From creating responsive layouts to
+                        implementing basic interactivity, I have gained valuable hands-on experience and a deeper
+                        appreciation for the intricacies of front-end development.</p>
                 </div>
             </div>
         </div>
