@@ -490,6 +490,56 @@
             color: rgb(247, 247, 48)
             ;
         }
+
+        @media only screen and (max-width: 768px) {
+            .idd {
+                grid-template-columns: 1fr; /* Change grid layout to a single column */
+            }
+
+            .main {
+                padding: 0; /* Adjust padding as needed */
+                background-size:cover ;
+            }
+
+            /* Adjust specific elements for smaller screens */
+            .two {
+                height: auto; /* Auto height to fit content */
+            }
+
+            .part-1,
+            .part-2 {
+                display: none; /* Change display to block for full-width sections */
+            }
+
+            /* Add more specific adjustments as needed */
+
+            #workk{
+                overflow: auto;
+            }
+            
+            .two{
+                display: grid;
+                grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+                padding: 10px;
+            }
+            .icons{
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+                padding: 10px;
+                margin: 20px;
+            }
+            .one{
+        display: flex;
+        justify-content: center;
+    }
+#NextName{
+    font-size: 33px;
+}
+#sidelinkedin{
+    margin-left: 25px;
+}
+
+        }
     </style>
     <script>
         var name = "Prajwal Deshmukh";
@@ -520,7 +570,7 @@
             setTimeout(DotLoad,timee)
         }
 
-
+    
 
         }
 
@@ -554,12 +604,12 @@
                 <span class="bi bi-house-door"> Home</span>
                 <span class="bi bi-person">About</span>
                 <span class="bi bi-file-earmark-person"><a href="#resume"> Resume</a></span>
-                <span class="bi bi-person-workspace"><a href="#mywork"> My Works</a></span>
+                <span class="bi bi-person-workspace"><a href="#mywork"> MyWorks</a></span>
                 <a href="mailto:prajwalrd19@gmail.com"><span class="bi bi-envelope"> Contact Me</span></a>
             </div>
             <div class="icons">
                 <a href="https://www.linkedin.com/in/prajwal-deshmukh-2a9552304/"><span
-                        class="bi bi-linkedin"></span></a>
+                        class="bi bi-linkedin" id="sidelinkedin"></span></a>
                 <a href=" https://www.instagram.com/prajwalrd19/?hl=en"> <span class="bi bi-instagram ms-5"></span></a>
                 <span class="bi bi-twitter-x ms-5 "></span>
 
