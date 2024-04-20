@@ -22,7 +22,8 @@
             color: white;
             width: 100%;
             height: 100vh;
-            background-image: url(public/images/bg-.jpg);
+            background: linear-gradient(rgb(143, 38, 38),rgb(84, 40, 40),rgb(18, 11, 11));
+            /* background-image: url(public/images/bg-.jpg); */
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -231,7 +232,7 @@
     flex-direction: column;
         }
 
-        .lap-view span{
+        .lap-view a{
            margin: 10px;
            padding-bottom: 10px;
            margin-bottom: 25px;
@@ -584,6 +585,7 @@
 
             #cnt {
                 margin: 6px;
+                font-family: Vladimir script regular;
             }
 
             #cntapp {
@@ -655,18 +657,19 @@
             </div>
             <div class="two">
                 <div class="lap-view">
-                    <span class="bi bi-house-door"> Home</span>
-                    <span class="bi bi-person">About</span>
-                    <span class="bi bi-file-earmark-person"><a href="#resume"> Resume</a></span>
-                    <span class="bi bi-person-workspace"><a href="#mywork"> MyWorks</a></span>
+                    <a href=""><span class="bi bi-house-door"> Home</span></a>
+                    <a href=""><span class="bi bi-person"> About</span></a>
+                    <a href="#resume"><span class="bi bi-file-earmark-person"> Resume</span></a>
+                    <a href="#mywork"><span class="bi bi-person-workspace"> MyWorks</span></a>
+                   
                     <a href="mailto:prajwalrd19@gmail.com"><span class="bi bi-envelope"> Contact Me</span></a>
 
                 </div>
                 <div id="mob-view">
-                    <span class="bi bi-house-door"></span>
-                    <span class="bi bi-person"></span>
+                    <a href=""><span class="bi bi-house-door"></span></a>
+                    <span class="bi bi-person" data-bs-toggle="modal" data-bs-target="#mod"></span>
                     <a href="./public/docs/Prajwald.pdf"><span class="bi bi-file-earmark-person"></span></a>
-                    <span class="bi bi-person-workspace"><a href="#mywork"></a></span>
+                    <a href="#mywork"><span class="bi bi-person-workspace"></span></a>
                     <a href="mailto:prajwalrd19@gmail.com"><span class="bi bi-envelope"></span></a>
 
                 </div>
@@ -900,8 +903,7 @@
                 <a href="mailto:prajwalrd19@gmail.com"><span id="fnav">Contact</span></a>
             </div>
             <div id="cntapp1">
-                <a href="https://www.linkedin.com/in/prajwal-deshmukh-2a9552304/" target="_blank"><span
-                        class="bi bi-linkedin" id="linked"></span></a>
+                <a href="https://www.linkedin.com/in/prajwal-deshmukh-2a9552304/" target="_blank"><span class="bi bi-linkedin" id="linked"></span></a>
 
                 <a href="mailto:prajwalrd19@gmail.com"><span class="bi bi-envelope" id="mail"></span></a>
                 <a href=" https://www.instagram.com/prajwalrd19/?hl=en" target="_blank"><span class="bi bi-instagram"
@@ -909,7 +911,7 @@
                 <span class="bi bi-twitter-x" id="whatsapp"></span>
             </div>
             <div class="text-center fw-bold" id="cpy">
-                <p>Copyright Prajwal Deshmukh - All rights reserved</p>
+                <p>Copyright 	&#169; Prajwal Deshmukh - All rights reserved</p>
             </div>
             <p class="" id="cnt">Created By: Prajwal Deshmukh..</p>
         </div>
