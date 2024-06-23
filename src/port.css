@@ -1,0 +1,551 @@
+body{
+    background: #4CA1AF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#hello{
+margin-top: 69px;
+margin-left: 90px;
+font-size: 65px;
+}
+#pd{
+margin-top: 30px;
+font-size: 42px;
+margin-left: 153px;
+font-family: sans-serif;
+}
+#fsd{
+margin-top: 50px;
+font-size: 35px;
+margin-left: 143px
+}
+#developer{
+    color: darkred;
+}
+.firstpage{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+#hwrc{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: darkred;
+    
+}
+#home{
+    margin-left: 50px;
+}
+#hl{
+  text-decoration: none;
+  color: darkred;
+}
+#h2{
+  text-decoration: none;
+  color: darkslateblue;
+}
+.bi-envelope{
+  color: red;
+}
+.bi-instagram{
+  color: purple;
+}
+.bi-github{
+  color: black;
+}
+.bi-linkedin{
+  color: blue;
+}
+
+#res{
+    margin-left: 30px;
+    margin-right: 30px
+}
+#works{
+    margin-left: 30px;
+   
+    
+}
+#imgset{
+  width: 380px;
+  height: 400px;
+  border-radius: 50%;
+}
+#imgadj{
+    margin-top: 100px;
+
+    margin-left: 200px;
+}
+#firsticons{
+    margin-left: 320px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+#linkedin{
+    margin-right: 30px;
+}
+#instagram{
+    margin-right: 30px;
+}
+#aboutme{
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 250px;
+}
+#aboutpara{
+  margin-left: 30px;
+  font-size: 30px;
+  line-height: 1.35;
+}
+#exp{
+  font-size: 30px;
+  margin-top: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 20px;
+}
+.Me{
+  color: darkred;
+}
+#skillhead{
+text-align: center;
+font-weight: bold;
+color: darkred;
+font-style: italic;
+font-size: 40px;
+}
+#skillimg{
+  margin-top: 70px;
+}
+#html{
+  width: 100px;
+  border-radius: 20px;
+}
+#css{
+  width: 100px;
+  border-radius: 20px;
+}
+#boot{
+  width: 100px;
+  border-radius: 20px;
+  height: 120px;
+}
+#js{
+  width: 100px;
+  border-radius: 20px;
+  height: 120px;
+}
+#react{
+  width: 100px;
+  border-radius: 20px;
+  height: 120px;
+}
+#node{
+  width: 150px;
+  border-radius: 20px;
+  height: 120px;
+}
+#express{
+  width: 150px;
+  height: 120px;
+  border-radius: 20px;
+}
+#skillimg{
+  display: flex;
+  justify-content: space-evenly;
+}
+#work{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+  color: darkred;
+  margin-top: 40px;
+}
+__________________________________MAIL______________
+
+#mailcss {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  #mailp {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: lowercase;
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-left: 110px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  #topmail{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: crimson;
+  }
+
+  ___________________________________Works___________________________
+
+
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+}
+
+#hero {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+#card-stacks {
+    width: 660px;
+    list-style-type: none;
+    margin: 0 auto 20px;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    height: 700px;
+}
+
+#title {
+    margin: 0 0 20px;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: darkslategrey;
+}
+
+#title h2 {
+    font-weight: 700;
+}
+
+#stack-1, #stack-2, #stack-3 {
+    position: absolute;
+    left: 0;
+    transition: all 0.4s cubic-bezier(.63, .15, .03, 1.02);
+}
+
+#cards-down-1, #cards-down-2, #cards-down-3 {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+#card-1-1, #card-1-2, #card-1-3,
+#card-2-1, #card-2-2, #card-2-3,
+#card-3-1, #card-3-2, #card-3-3 {
+    transition: all 0.4s cubic-bezier(.63, .15, .03, 1.22);
+    left: 0;
+    transition-delay: 0.4s;
+    background: #FFF;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    box-shadow: 1px 2px 2px 0 #aaa;
+}
+
+#cimg1-1, #cimg1-2, #cimg1-3,
+#cimg2-1, #cimg2-2, #cimg2-3,
+#cimg3-1, #cimg3-2, #cimg3-3 {
+    max-width: 100%;
+    height: auto;
+}
+
+#cimg1-1{
+  width: 200px;
+  height: 200px;
+}
+#cimg1-2{
+  width: 200px;
+  height: 200px;
+}
+#cimg1-3{
+  width: 200px;
+  height: 200px;
+}
+#cimg2-1{
+  width: 200px;
+  height: 200px;
+}
+#cimg2-2{
+  width: 200px;
+  height: 200px;
+}
+#cimg2-3{
+  width: 200px;
+  height: 200px;
+}
+#cimg3-1{
+  width: 100%;
+  height: 120px;
+}
+#cimg3-2{
+  width: 200px;
+  height: 200px;
+}
+#cimg3-3{
+  width: 200px;
+  height: 200px;
+}
+
+
+#content-1-1, #content-1-2, #content-1-3,
+#content-2-1, #content-2-2, #content-2-3,
+#content-3-1, #content-3-2, #content-3-3 {
+    padding: 5px 10px;
+}
+
+#card-1-1 {
+    z-index: 10;
+    transform: rotateZ(-2deg);
+}
+
+#card-1-2 {
+    z-index: 9;
+    transform: rotateZ(-7deg);
+}
+
+#card-1-3 {
+    z-index: 8;
+    transform: rotateZ(5deg);
+}
+
+#card-2-1 {
+    z-index: 10;
+    transform: rotateZ(-2deg);
+}
+
+#card-2-2 {
+    z-index: 9;
+    transform: rotateZ(-7deg);
+}
+
+#card-2-3 {
+    z-index: 8;
+    transform: rotateZ(5deg);
+}
+
+#card-3-1 {
+    z-index: 10;
+    transform: rotateZ(-2deg);
+}
+
+#card-3-2 {
+    z-index: 9;
+    transform: rotateZ(-7deg);
+}
+
+#card-3-3 {
+    z-index: 8;
+    transform: rotateZ(5deg);
+}
+
+#card-stacks.transition #stack-1 {
+    left: 0;
+}
+
+#card-stacks.transition #stack-2 {
+    left: 220px;
+}
+
+#card-stacks.transition #stack-3 {
+    left: 440px;
+}
+
+#card-stacks.transition #card-1-1, #card-stacks.transition #card-2-1, #card-stacks.transition #card-3-1 {
+    top: 440px;
+    transform: rotateZ(0deg);
+}
+
+#card-stacks.transition #card-1-2, #card-stacks.transition #card-2-2, #card-stacks.transition #card-3-2 {
+    top: 220px;
+    transform: rotateZ(0deg);
+}
+
+#card-stacks.transition #card-1-3, #card-stacks.transition #card-2-3, #card-stacks.transition #card-3-3 {
+    top: 0;
+    transform: rotateZ(0deg);
+}
+
+footer{
+  height: 500px;
+}
+
+#myname{
+  text-align: center;
+  font-family: Vladimir script regular;
+  color: darkmagenta;
+  font-size: 42px;
+  font-weight: bold;
+}
+#lastnav{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+#lasticons{
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 60px;
+}
+#copyright{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top:180px;
+
+}
+
+
+
+  @media only screen and (max-width: 768px){
+    body{
+      background: #4CA1AF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 1000px;
+  height: 100vh;
+  }
+  #hello{
+    margin-top: 69px;
+    margin-left: 90px;
+    font-size: 111px;
+    }
+    #pd{
+      margin-top: 30px;
+      font-size: 105px;
+      margin-left: 153px;
+      font-family: sans-serif;
+      }
+      #fsd{
+        margin-top: 65px;
+        font-size: 56px;
+        margin-left: 20px;
+        }
+        .firstpage{
+          display: block;
+        }
+        #mailp{
+          font-size: 45px;
+          bottom: -30px;
+          right: 123px;
+        }
+       
+      #imgset{
+        width: 550px;
+        height: 500px;
+      }
+      #firsticons{
+        margin-left: 360px;
+        font-size: 50px;
+        margin-top: 50px;
+    } 
+    #hwrc{
+     display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: darkred;
+    position: relative;
+    top: 800px;
+    margin-right: 92px;
+    }
+    #aboutme{
+      text-align: center;
+      font-size: 58px;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 180px;
+    }
+    #aboutpara{
+      font-size: 40px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    #exp{
+      font-size: 40px;
+      margin-top: 40px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    #skillhead{
+      text-align: center;
+     font-weight: bold;
+     color: darkred;
+     font-style: italic;
+     font-size: 60px;
+    }
+    #work{
+      text-align: center;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 60px;
+      color: darkred;
+      margin-top: 75px;
+    }
+    
+#myname{
+  text-align: center;
+  font-family: Vladimir script regular;
+  color: darkmagenta;
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+#lastnav{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+#lasticons{
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 60px;
+}
+#copyright{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top:140px;
+
+}
+}

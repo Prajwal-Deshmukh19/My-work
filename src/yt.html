@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nareshit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+        .profile{
+            border-radius: 40px;
+            border: 1px solid black;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding-right:20px;
+            padding-left: 20px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+            margin-top: 20px;
+        }
+        .bi-justify{
+            font-size: 25px;
+        }
+        .search-bar{
+            width: 400px;
+            border: 1px solid black;
+            font-size:20px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-top: 15px;
+            color: gray;
+        }
+        .search-area{
+            display: flex;
+        }
+        .bi-mic-fill{
+            margin-left: 10px;
+            font-size: 30px;
+            margin-top: 10px;
+
+        }
+        .shortcut-buttons{
+            margin-right: 20px;
+            justify-content: space-evenly;
+            font-size: 27px;
+        }
+        .nav-item{
+            font-size: 15px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+           }
+           article{
+            display: grid;
+            grid-template-columns: 10fr 2fr;
+            margin-top: 20px;
+            font-family: Arial;
+
+           }
+           .title{
+            font-size: 25px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        .sub-title{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .Subscribe{
+         padding: 5px;
+         background-color: red;
+         width: 140px;
+         border-radius: 10px;
+         color: white;
+        }
+        .categories{
+            display: flex;
+            margin-top: 27px;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: arial;
+        }
+        .videos{
+            font-size: 15px;
+            font-family: arial;
+            padding: 40px;
+        }
+        .btn-latest, .btn-popular, .btn-oldest{
+            padding: 5px;
+            font-size: 15px;
+            width: 80px;
+            background-color: black;
+            color: whitesmoke;
+            border-radius: 10px;
+        
+        }
+        .thumbnails
+        {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nh">
+            <span class="bi bi-justify"></span>
+            <img src="./public/images/youtube-logo.jpg" width="150px">
+         </div>
+        <div class="search-area">
+        <div class="search-bar">
+                <span>Nareshit</span>
+                <span class="bi bi-search"></span>
+        </div>
+                 <span class="bi bi-mic-fill"></span>
+        </div>
+        <div class="shortcut-buttons">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell-fill"></span>
+            <img class="profile " src="public/images/mens-wear.jpg" width="30px height=10px">
+        </div>
+</header>
+<section>
+     <nav>
+         <div class="nav-item">
+        <div class="bi bi-house-door"></div>
+             <span>Home</span>
+        </div>
+        <div class="nav-item">
+        <div class="bi bi-film"></div>
+             <span>Shorts</span>
+                    </div>
+        <div class="nav-item">
+         <div class="bi bi-collection-play"></div>
+            <span>Subscription</span>
+        </div>
+        <div class="nav-item">
+         <div class="bi bi-camera-video"></div>
+             <span>Library</span>
+        </div>
+        <div class="nav-item">
+        <div class="bi bi-clock-history"></div>
+             <span>History</span>
+        </div>
+        </nav>
+<main>
+    <div>
+       <img src="public/images/nareshit-banner.jpg" width="100%">
+     </div>
+<article>
+    <div>
+      <img src="public/images/nareshit-logo.jpg" align="left" width="140">
+    <div class="title">
+                Naresh i Technologies
+    </div>
+    <div class="sub-title">
+       @NareshIT1.19M subscribers2.8K videos
+    </div>
+    <div class="text">
+        We are one of the India's largest software training organization and an Top 5 of Best Software Training Institutes.
+    </div>
+    <div>
+       <a href="instagram.com/nareshitech">and instagram.com/nareshitech</a>
+            and 7 more links... </div>
+    </div>
+    <div>
+    <div class="Subscribe">
+        <span class="bi bi-bell-fill"></span>
+        <span>Subscribe</span>
+         <span class="bi bi-chevron-down"></span>
+    </div>
+    </div>
+ </article>
+     <div class="categories">
+       <span>Home</span>
+       <span>Videos</span>
+        <span>Shorts</span>
+        <span>Live</span>
+         <span>Playlist</span>
+         <span>Community</span>
+          <span>Channels</span>
+           <span>About</span>
+    </div>
+   <div class="videos">
+      <button class="btn-latest">Latest</button>
+      <button class="btn-popular">Popular</button>
+      <button class="btn-oldest">Oldest</button>
+   </div>
+   <div class="thumbnails">
+    <div>
+        <iframe src="http://www.youtube.com/embed/Ft-v5aLDWqc"></iframe>
+    </div>
+    <div>
+        <iframe src="http://www.youtube.com/embed/DeEszXEewHs"></iframe>
+    </div>
+    <div>
+        <iframe src="http://www.youtube.com/embed/f5doC5v3Xd8"></iframe>
+    </div>
+    <div>
+        <iframe src="http://www.youtube.com/embed/X7RNpVTemHo"></iframe>
+    </div>
+</div>
+
+
+
+</main>
+</section>
+    
+</body>
+</html>

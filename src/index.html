@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./port.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+   <script>
+    var name = "Web Developer";
+    var index = 0;
+    var time = 190;
+
+
+    function NameLoad() {
+        if (index < name.length) {
+            document.getElementById("developer").innerHTML += name.charAt(index);
+            index++;
+        } else {
+            document.getElementById("developer").innerHTML = ""; // Clear the name once it's fully displayed
+            index = 0; // Reset the index to 0
+        }
+        setTimeout(NameLoad, time);
+    }
+
+
+
+    function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to handle scroll events
+        function handleScroll() {
+            const aboutMeElement = document.getElementById('aboutme');
+            if (isInViewport(aboutMeElement)) {
+                aboutMeElement.classList.add('animate__bounce');
+            } else {
+                aboutMeElement.classList.remove('animate__bounce');
+            }
+        }
+
+        // Attach scroll event listener
+        document.addEventListener('scroll', handleScroll);
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const skillImg = document.getElementById('skillimg');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillImg.classList.add('animate__flash');
+                } else {
+                    skillImg.classList.remove('animate__flash');
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        observer.observe(skillImg);
+    });       
+   </script>
+</head>
+<body onload="NameLoad()">
+    <div class="firstpage" id="homelink">
+        <div>
+            <h3 id="hello">Hello!</h3> 
+            <h4 id="pd">I'm Prajwal Deshmukh</h4>
+            <h5 id="fsd">< I am a Full Stack <span id="developer"></span> /></h5>
+         
+             <div id="topmail"><a id="mailp" href="mailto:prajwalrd19@gmail.com" id="mailunderline">prajwalrd19@gamil.com</a></div>
+     
+         
+         </div>
+         <div id="img-home">
+             <div id="hwrc"> 
+                <a href="#homelink" id="hl"><span id="home">Home</span></a>
+             <a href="#worklink" id="hl"><span id="works">Works</span></a>
+            <a href="https://prajwal-deshmukh19.github.io/My-work/public/docs/Prajwald.pdf" id="hl"> <span id="res">Resume</span></a>
+             <a href="mailto:prajwalrd19@gmail.com" id="hl"><span id="Contact">Contact</span></a>
+             </div>
+             <main>
+                <div id="imgadj"><img src="../public/images/animae-gif.gif" id="imgset"  alt=""></div>
+                <div id="firsticons">
+                    <a href="https://www.linkedin.com/in/prajwal-deshmukh-2a9552304/"><span class="bi bi-linkedin" id="linkedin"></span></a>
+                    <a href="https://www.instagram.com/ui_developer__/?hl=en"><span class="bi bi-instagram" id="instagram"></span></a>
+                    <a href="https://github.com/Prajwal-Deshmukh19"><span class="bi bi-github" id="github"></span></a>
+                </div>
+             </main>
+         </div>
+    </div>
+    <section>
+        <div id="aboutlink">
+            <h3 id="aboutme" class="animate__animated animate__fadeinUp">About <span class="Me">Me</span></h3>
+           <div>
+            <h2 id="aboutpara">As a recent graduate with a passion for UI development, I am excited to embark on a journey
+                of turning designs into dynamic and user-friendly interfaces. With a solid foundation in front-end
+                technologies and a hunger for continuous learning, I am eager to bring fresh perspectives and creative
+                solutions to table.
+            </h2>
+           </div>
+            <div id="exp" >
+                <p id="exp1">Proficient in <span class="Me">HTML, CSS, and JavaScript,</span> I have hands-on experience building static web pages and
+                    simple interactive components.</p>
+                <p id="exp1">Familiar with front-end frameworks like <span class="Me">React</span>, I am enthusiastic about expanding my knowledge and
+                    honing my skills in modern web development.</p>
+                <p id="exp1">Eager to dive into <span class="Me">UI/UX design principles,</span> I am keen on understanding user behavior and creating
+                    intuitive interfaces that prioritize usability and accessibility.</p>
+                <p id="exp1"> Adept at problem-solving and debugging, I approach challenges with a positive attitude and a
+                    willingness to experiment and learn from mistakes.</p>
+                <p id="exp1">Collaborative and team-oriented, I thrive in environments where I can contribute my ideas and learn
+                    from experienced professionals.</p>
+            </div>
+        </div>
+        <div>
+            <h3 id="skillhead">Skills.</h3>
+            <div id="skillimg" class="animate__animated ">
+                <div><img src="../public/images/HTML.png" id="html"></div>
+            <div><img src="../public/images/CSS.png" id="css"></div>
+            <div><img src="../public/images/BOOTSTRAP.png" id="boot"></div>
+            <div><img src="../public/images/JS.png" id="js"></div>
+            <div><img src="../public/images/reactjs.png" id="react"></div>
+            <div><img src="../public/images/nodejs.png" id="node"></div>
+            <div><img src="../public/images/expressjs.png" id="express"></div>
+            </div>
+        </div>
+        <div id="worklink">
+            <div><h3 id="work">Works.</h3></div>
+            <div>
+                <ul id="card-stacks">
+                    <li>
+                        <h2  id="title">Expand to grid</h2>
+                    </li>
+                    <li id="stack-1">
+                        <ul id="cards-down-1">
+                            <li id="card-1-1"><a href="./net.html"><img id="cimg1-1" src="../public/images/netflix.png" /></a>
+                                <div id="content-1-1">
+                                    <h1>Netflix</h1>
+                                    <button>Netflix</button>
+                                </div>
+                            </li>
+                            <li id="card-1-2"><a href="./dent.html"><img id="cimg1-2" src="../public/images/dental.png" /></a>
+                                <div id="content-1-2">
+                                    <h1>Dental</h1>
+                                    <button>Dental</button>
+                                </div>
+                            </li>
+                            <li id="card-1-3"><a href="./yt.html"><img id="cimg1-3" src="../public/images/yt.png" /></a>
+                                <div id="content-1-3">
+                                    <h1>Youtube</h1>
+                                    <button>Youtube</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="stack-2">
+                        <ul id="cards-down-2">
+                            <li id="card-2-1"><a href="./shop.html"><img id="cimg2-1" src="../public/images/shopper.png" /></a>
+                                <div id="content-2-1">
+                                    <h1>Shopper</h1>
+                                    <button>Shopper</button>
+                                </div>
+                            </li>
+                            <li id="card-2-2"><a href="./weather.html"><img id="cimg2-2" src="../public/images/weather.png" /></a>
+                                <div id="content-2-2">
+                                    <h1>Facebook</h1>
+                                    <button>Facebook</button>
+                                </div>
+                            </li>
+                            <li id="card-2-3"><a href="./hotel.html"><img id="cimg2-3" src="../public/images/hotell.png" /></a>
+                                <div id="content-2-3">
+                                    <h1>Hotel</h1>
+                                    <p>Hotel</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="stack-3">
+                        <ul id="cards-down-3">
+                            <li id="card-3-1"><img id="cimg3-1" src="../public/images/code.png" />
+                                <div id="content-3-1">
+                                    <h1 class="fst-italic fw-bold">Projects</h1>
+                                    
+                                </div>
+                            </li>
+                            <li id="card-3-2"><img id="cimg3-2" src="../public/images/amazon.png" />
+                                <div id="content-3-2">
+                                    <h1>Amazon</h1>
+                                    <p>Amazon</p>
+                                </div>
+                            </li>
+                            <li id="card-3-3"><a href="./land.html"><img id="cimg3-3" src="../public/images/landkit.png" /></a>
+                                <div id="content-3-3">
+                                    <h1>Landkit</h1>
+                                    <p>Landkit</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2 id="myname">Prajwal Deshmukh</h2>
+        </div>
+        <div id="lastnav">
+            <a href="#homelink" id="h2"><span>Home</span></a>
+           <a href="#aboutlink" id="h2"> <span>About</span></a>
+            <a href="#worklink" id="h2"><span>Projects</span></a>
+            
+        </div>
+        <div id="lasticons">
+            <a href="https://www.linkedin.com/in/prajwal-deshmukh-2a9552304/"><span class="bi bi-linkedin"></span></a>
+            <a href="mailto:prajwalrd19@gmail.com"><span class="bi bi-envelope"></span></a>
+            <a href="https://www.instagram.com/ui_developer__/?hl=en"><span class="bi bi-instagram"></span></a>
+            <a href="https://github.com/Prajwal-Deshmukh19"><span class="bi bi-github"></span></a>
+            <span class="bi bi-phone"></span>
+        </div>
+        <div id="copyright">
+            <p>Copyright  	&#169; Prajwal Deshmukh - All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+       $(document).ready(function() {
+    $('#card-stacks').on('click', function() {
+        $(this).toggleClass('transition');
+    });
+});
+
+    </script>
+</body>
+</html>
